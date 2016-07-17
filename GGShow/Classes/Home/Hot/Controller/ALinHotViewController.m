@@ -79,6 +79,7 @@ static NSString *ADReuseIdentifier = @"ALinHomeADCell";
             [self showHint:@"网络异常"];
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"%@",error.localizedDescription);
         [self showHint:@"网络异常"];
     }];
     

@@ -12,5 +12,11 @@ pod 'MBProgressHUD', '~> 0.9.2'
 pod 'BarrageRenderer', '~> 1.8.0'
 #pod 'GPUImage', '~> 0.1.7' 由于LFLiveKit里面已经集成了GPUImage
 pod 'LFLiveKit'
+pod 'HyphenateSDK', :git => 'https://github.com/easemob/hyphenate-cocoapods.git'
+
+pod 'BlocksKit', '~> 2.2.5'
+pod 'MWPhotoBrowser', '~> 2.1.1'
+pod 'Parse', '~> 1.13.0'
+pod 'SlimeRefresh', '~> 0.0.1'
 
 end
