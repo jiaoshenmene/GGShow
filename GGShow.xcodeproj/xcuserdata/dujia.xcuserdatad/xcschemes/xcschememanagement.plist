@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>GGShow_a.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>A16F47761D3B339E009722A5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A16F478C1D3B37E2009722A5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
