@@ -19,6 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
      self.window.rootViewController = [[LoginViewController alloc] init];
+    EMOptions *options = [EMOptions optionsWithAppkey:@"gg815319775#dj9775"];
+    //    options.apnsCertName = @"istore_dev";
+    [[EMClient sharedClient] initializeSDKWithOptions:options];
     return YES;
 }
 

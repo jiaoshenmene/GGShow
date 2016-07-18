@@ -95,7 +95,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    EMError *error = [[EMClient sharedClient] loginWithUsername:@"dujia04" password:@"123456"];
+    if (!error) {
+        [[EMClient sharedClient].options setIsAutoLogin:YES];
+        NSLog(@"EMClient 登录成功");
+    }
     [self setup];
     
 }
@@ -175,6 +179,7 @@
 - (void)loginSuccess
 {
     [self showHint:@"登录成功"];
+   
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self presentViewController:[[MainViewController alloc] init] animated:NO completion:^{

@@ -1,36 +1,34 @@
 //
-//  ALinBottomToolView.m
-//  MiaowShow
+//  GGCloseBtn.m
+//  GGShow
 //
-//  Created by ALin on 16/6/16.
-//  Copyright © 2016年 ALin. All rights reserved.
+//  Created by dujia on 16/7/18.
+//  Copyright © 2016年 dujia. All rights reserved.
 //
 
-#import "ALinBottomToolView.h"
+#import "GGCloseBtn.h"
 
-@implementation ALinBottomToolView
+@implementation GGCloseBtn
 
-- (instancetype)initWithFrame:(CGRect)frame
+- (instancetype) initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
         [self setup];
     }
     return self;
 }
-
 - (NSArray *)tools
 {
-    return @[@"talk_public_40x40", @"talk_private_40x40", @"talk_sendgift_40x40", @"talk_rank_40x40", @"talk_share_40x40"];
+    return @[@"talk_close_40x40"];
 }
 
 - (void)setup
 {
     CGFloat wh = 40;
-    CGFloat margin = (ALinScreenWidth - wh * (self.tools.count + 1)) / (self.tools.count + 1.0);
     CGFloat x = 0;
     CGFloat y = 0;
     for (int i = 0; i<self.tools.count; i++) {
-        x = margin + (margin + wh) * i;
+        x = 0;
         UIImageView *toolView = [[UIImageView alloc] initWithFrame:CGRectMake(x, y, wh, wh)];
         toolView.userInteractionEnabled = YES;
         toolView.tag = i;
@@ -42,8 +40,9 @@
 
 - (void)click:(UITapGestureRecognizer *)tapRec
 {
-    if (self.clickToolBlock) {
-        self.clickToolBlock(tapRec.view.tag);
+    if (self.closeBlock) {
+        self.closeBlock();
     }
 }
+
 @end

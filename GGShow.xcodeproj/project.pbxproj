@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5CFDF2A6B443C251F8D8C3DA /* libPods-GGShow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 071ED197056708CE0B1DA48D /* libPods-GGShow.a */; };
+		A10117931D3CD01300C46C6E /* GGCloseBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = A10117921D3CD01300C46C6E /* GGCloseBtn.m */; };
 		A16F47581D3B339E009722A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A16F47571D3B339E009722A5 /* main.m */; };
 		A16F475B1D3B339E009722A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A16F475A1D3B339E009722A5 /* AppDelegate.m */; };
 		A16F475E1D3B339E009722A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16F475D1D3B339E009722A5 /* ViewController.m */; };
@@ -293,6 +294,8 @@
 /* Begin PBXFileReference section */
 		071ED197056708CE0B1DA48D /* libPods-GGShow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GGShow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D829FD5D5500729BAE103CF /* Pods-GGShow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGShow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GGShow/Pods-GGShow.debug.xcconfig"; sourceTree = "<group>"; };
+		A10117911D3CD01300C46C6E /* GGCloseBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGCloseBtn.h; sourceTree = "<group>"; };
+		A10117921D3CD01300C46C6E /* GGCloseBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGCloseBtn.m; sourceTree = "<group>"; };
 		A16F47531D3B339E009722A5 /* GGShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GGShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16F47571D3B339E009722A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A16F47591D3B339E009722A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1025,6 +1028,8 @@
 				A16F497E1D3B3AA6009722A5 /* ALinUserView.h */,
 				A16F497F1D3B3AA6009722A5 /* ALinUserView.m */,
 				A16F49801D3B3AA6009722A5 /* ALinUserView.xib */,
+				A10117911D3CD01300C46C6E /* GGCloseBtn.h */,
+				A10117921D3CD01300C46C6E /* GGCloseBtn.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2221,6 +2226,7 @@
 				A16F4BE11D3B4946009722A5 /* UIImageView+EMHighlightedWebCache.m in Sources */,
 				A16F4C111D3B4946009722A5 /* UserProfileViewController.m in Sources */,
 				A16F4BBD1D3B4946009722A5 /* UserProfileManager.m in Sources */,
+				A10117931D3CD01300C46C6E /* GGCloseBtn.m in Sources */,
 				A16F49E01D3B3AA6009722A5 /* ALinTopAD.m in Sources */,
 				A16F4BC11D3B4946009722A5 /* EMRemarkImageView.m in Sources */,
 				A16F4A081D3B3AA6009722A5 /* LoginViewController.m in Sources */,

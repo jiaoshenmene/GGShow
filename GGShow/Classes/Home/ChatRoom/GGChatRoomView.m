@@ -18,7 +18,7 @@ CGFloat const crbottomHeight = 50;
 @interface GGChatRoomView()<UITableViewDataSource , UITableViewDelegate , EMChatManagerDelegate , GGChatRoomBottomViewDelegate>
 
 @property (nonatomic , strong) UITableView *tableView;
-@property (nonatomic , strong) GGChatRoomBottomView *bottomView;
+//@property (nonatomic , strong) GGChatRoomBottomView *bottomView;
 
 @property (nonatomic , strong) NSMutableArray<GGChatRoomModel *> *dataArray;
 
@@ -52,9 +52,9 @@ CGFloat const crbottomHeight = 50;
         [[EMClient sharedClient].chatManager addDelegate:self delegateQueue:nil];
         
         
-        _bottomView = [[GGChatRoomBottomView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_tableView.frame), CGRectGetWidth(frame), crbottomHeight)];
-        _bottomView.delegate = self;
-        [self addSubview:_bottomView];
+//        _bottomView = [[GGChatRoomBottomView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_tableView.frame), CGRectGetWidth(frame), crbottomHeight)];
+//        _bottomView.delegate = self;
+//        [self addSubview:_bottomView];
         
         
     }

@@ -64,7 +64,7 @@ const static NSString *GGRequestHeader = @"http://localhost/";
 
 
 
-#define GGMainScreenFrame [UIScreen mainScreen ].applicationFrame
+#define GGMainScreenFrame [UIScreen mainScreen].bounds
 
 
 
